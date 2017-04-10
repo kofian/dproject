@@ -20,8 +20,9 @@ production:
   adapter: posgresql
   database: dproject_production
   encoding: utf8
-  password: Ojukwu787
-  username: Updater
+   password: "<%= ENV['POSTGRES_DB_PASSWORD'] %>" 
+  username: "<%= ENV['POSTGRES_DB_USERNAME'] %>" 
+
   host: localhost
 test: 
   adapter: postgresql
