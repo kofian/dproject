@@ -5,7 +5,6 @@ default:
   host: localhost
   password: Ojukwu787
   pool: 5
-  
   username: Updater
 development: 
   adapter: postgresql
@@ -14,15 +13,13 @@ development:
   host: localhost
   password: Ojukwu787
   pool: 5
-  
   username: Updater
 production: 
   adapter: posgresql
   database: dproject_production
   encoding: utf8
-   password: "<%= ENV['POSTGRES_DB_PASSWORD'] %>" 
+  password: "<%= ENV['POSTGRES_DB_PASSWORD'] %>" 
   username: "<%= ENV['POSTGRES_DB_USERNAME'] %>" 
-
   host: localhost
 test: 
   adapter: postgresql
@@ -31,5 +28,4 @@ test:
   host: localhost
   password: Ojukwu787
   pool: 5
- 
   username: Updater
